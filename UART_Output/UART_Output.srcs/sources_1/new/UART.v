@@ -74,14 +74,16 @@ module UART
                 if(ready)
                 begin
                     state <= 1;
-                    
+                    outBit <= 1'b0; //low bit for start
                 end
+                else
+                    outBit <= 1'b1; // high bit while waiting
             end
             4'h1: // start bit
             begin
                 shiftReady <= 1; //enable shift register
                 state <= state +1;
-                
+                outBit <= shiftOutData;// view 
             end
             4'h2:  // view data
             begin
@@ -90,15 +92,22 @@ module UART
                 shiftReady <= 0;
                     if(parity > 0) // if parity param is 0, skip over step
                         state <= state + 1;
+                        outBit <= parityBitOut;// parity bit
                     else
                         state <= state + 2;
+                        outBit <= 1'b0;// stop bit(s) 
                 end
             end     
-            4'h3: state <= state+1;// parity bit
+            4'h3: 
+            begin
+            state <= state+1;// parity bit
+            outBit <= 1'b0;// stop bit(s) 
+            end
             4'h4: 
             begin
                 ready <= 1'b0;
                 state <= 0;// stop bit(s) 
+                outBit <= 1'b1; // high bit while waiting
             end
             default:
             begin
@@ -106,6 +115,7 @@ module UART
                 begin
                     state <= 1;
                     ready <= 0;
+                    outBit <= 1'b1; // high bit while waiting
                 end
             end
         endcase
@@ -114,19 +124,19 @@ module UART
     
         
     
-    always @ * //logic for during case statments
-    begin
-        case(state)
-            4'h0: outBit <= 1'b1; //waiting for start
+//    always @ * //logic for during case statments
+//    begin
+//        case(state)
+//            4'h0: outBit <= 1'b1; //waiting for start
                 
-            4'h1: outBit <= 1'b0; // start bit
+//            4'h1: outBit <= 1'b0; // start bit
                 
-            4'h2: outBit <= shiftOutData;// view data
+//            4'h2: outBit <= shiftOutData;// view data
                 
-            4'h3: outBit <= parityBitOut;// parity bit
-            4'h4: outBit <= 1'b0;// stop bit(s) 
-            default:
-                outBit <= 1'b1;
-        endcase
-     end
+//            4'h3: outBit <= parityBitOut;// parity bit
+//            4'h4: outBit <= 1'b0;// stop bit(s) 
+//            default:
+//                outBit <= 1'b1;
+//        endcase
+//     end
 endmodule

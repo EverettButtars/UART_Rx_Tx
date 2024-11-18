@@ -24,7 +24,11 @@ module clk_gen(
     input clk,
     output clk_div
     );
-    
-    assign clk_div = clk % 4;
+    reg [26:0] counter = 0;
+    always @ (posedge clk)
+    begin
+        counter <= counter + 1;
+    end
+    assign clk_div = counter[1] ;
     
 endmodule
