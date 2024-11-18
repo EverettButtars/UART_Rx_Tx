@@ -24,7 +24,7 @@ module UART_top(
     output led,
     input btnC, 
     input [15:0] sw,
-    input clk, // this will later be the baud rate, unused for current testing
+    input clk // this will later be the baud rate, unused for current testing
     );
     parameter baudrate = 9600; //unused for now, will replace button
     //button will eventually be used to send packet

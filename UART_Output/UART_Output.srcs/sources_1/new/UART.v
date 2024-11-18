@@ -31,10 +31,10 @@ module UART
     output reg outBit,
     input send, 
     input [15:0] parrallelIn,
-    input clk,
+    input clk
     );
     
-    wire clk_div
+    wire clk_div;
     reg [2:0] state = 0;
     
     reg [stopBits:0] stopCounter =0 ;
@@ -91,11 +91,15 @@ module UART
                 begin
                 shiftReady <= 0;
                     if(parity > 0) // if parity param is 0, skip over step
+                    begin
                         state <= state + 1;
                         outBit <= parityBitOut;// parity bit
+                    end
                     else
+                    begin
                         state <= state + 2;
                         outBit <= 1'b0;// stop bit(s) 
+                    end
                 end
             end     
             4'h3: 
