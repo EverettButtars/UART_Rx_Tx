@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../UART_Output.srcs/sources_1/new/Parity_Checker.v" \
+"../../../../UART_Output.srcs/sources_1/new/ShiftReg.v" \
+"../../../../UART_Output.srcs/sources_1/new/UART.v" \
+"../../../../UART_Output.srcs/sources_1/new/UART_top.v" \
+"../../../../UART_Output.srcs/sources_1/new/clk_gen.v" \
+"../../../../UART_Output.srcs/sim_1/new/UART_Top_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
