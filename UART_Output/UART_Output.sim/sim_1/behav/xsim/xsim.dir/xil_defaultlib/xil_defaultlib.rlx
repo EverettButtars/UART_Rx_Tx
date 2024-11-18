@@ -2,10 +2,10 @@
 2020.2
 Oct 13 2023
 20:47:58
-C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sim_1/new/UART_Top_TB.v,1731624232,verilog,,,,UART_Top_TB,,,,,,,,
-C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/Parity_Checker.v,1731614785,verilog,,C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/ShiftReg.v,,Parity_Checker,,,,,,,,
-C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/ShiftReg.v,1731624568,verilog,,C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/UART.v,,ShiftReg,,,,,,,,
-C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/UART.v,1731623789,verilog,,C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/UART_top.v,,UART,,,,,,,,
-C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/UART_top.v,1731621668,verilog,,C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/clk_gen.v,,UART_top,,,,,,,,
-C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/clk_gen.v,1731619481,verilog,,C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sim_1/new/UART_Top_TB.v,,clk_gen,,,,,,,,
+C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sim_1/new/UART_Top_TB.v,1731959969,verilog,,,,UART_Top_TB,,,,,,,,
+C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/Parity_Checker.v,1731614785,verilog,,C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/ShiftReg.v,,Parity_Checker,,,,,,,,
+C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/ShiftReg.v,1731624568,verilog,,C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/UART.v,,ShiftReg,,,,,,,,
+C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/UART.v,1731957202,verilog,,C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/UART_top.v,,UART,,,,,,,,
+C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/UART_top.v,1731621668,verilog,,C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/clk_gen.v,,UART_top,,,,,,,,
+C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sources_1/new/clk_gen.v,1731619481,verilog,,C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sim_1/new/UART_Top_TB.v,,clk_gen,,,,,,,,

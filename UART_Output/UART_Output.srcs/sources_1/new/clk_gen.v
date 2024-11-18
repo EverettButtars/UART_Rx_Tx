@@ -25,6 +25,6 @@ module clk_gen(
     output clk_div
     );
     
-    assign clk_div = clk % 2;
+    assign clk_div = clk % 4;
     
 endmodule

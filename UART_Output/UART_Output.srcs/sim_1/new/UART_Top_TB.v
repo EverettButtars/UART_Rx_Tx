@@ -28,20 +28,19 @@ module UART_Top_TB(
     wire led;
     reg clk;
     reg send;
-    wire clk_div;
     
-    UART_top u_t(.sw(switch), .led(led), .clk(clk), .btnC(send), .clk_div(clk_div));
+    UART_top u_t(.sw(switch), .led(led), .clk(clk), .btnC(send));
     
     initial
     begin
     clk = 0;
     send = 0;
     
-    switch = 16'b0000000000101101;
+    switch = 16'b0000000000101101; // begin first test
     #5 send = 1;
     #1 send = 0;
     
-    #144 switch = 16'b0000000011001101;
+    #144 switch = 16'b0000000011001101; //begin second test
     
     #5 send = 1;
     #1 send = 0;

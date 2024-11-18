@@ -1,12 +1,2 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/Parity_Checker.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Parity_Checker
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/ShiftReg.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ShiftReg
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/UART.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module UART
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/UART_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module UART_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module clk_gen
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/evere/OneDrive/Desktop/School_Workspaces/Digital_Systems/Week 7/UART_Output/UART_Output.srcs/sim_1/new/UART_Top_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/evere/OneDrive/Repositories/UART/UART_Rx_Tx/UART_Output/UART_Output.srcs/sim_1/new/UART_Top_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module UART_Top_TB

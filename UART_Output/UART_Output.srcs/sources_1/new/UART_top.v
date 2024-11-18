@@ -25,7 +25,6 @@ module UART_top(
     input btnC, 
     input [15:0] sw,
     input clk, // this will later be the baud rate, unused for current testing
-    output clk_div
     );
     parameter baudrate = 9600; //unused for now, will replace button
     //button will eventually be used to send packet
@@ -34,6 +33,6 @@ module UART_top(
     parameter dataLength = 8; //length of data/dataframe
     parameter flowControl = 0; //unused for now, default is XON/XOFF
     
-    UART uart(.outBit(led), .send(btnC), .parrallelIn(sw), .clk(clk), .clk_div(clk_div));
+    UART uart(.outBit(led), .send(btnC), .parrallelIn(sw), .clk(clk));
     
 endmodule

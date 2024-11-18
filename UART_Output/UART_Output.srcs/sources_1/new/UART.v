@@ -32,10 +32,9 @@ module UART
     input send, 
     input [15:0] parrallelIn,
     input clk,
-    output clk_div
     );
     
-    
+    wire clk_div
     reg [2:0] state = 0;
     
     reg [stopBits:0] stopCounter =0 ;
@@ -70,17 +69,17 @@ module UART
         else if(clk_div)
         begin
         case (state)
-            4'h0:
+            4'h0: //waiting for ready (button press)
             begin
                 if(ready)
                 begin
                     state <= 1;
-                    ready <= 1'b0;
+                    
                 end
             end
             4'h1: // start bit
             begin
-                shiftReady <= 1;
+                shiftReady <= 1; //enable shift register
                 state <= state +1;
                 
             end
@@ -96,7 +95,11 @@ module UART
                 end
             end     
             4'h3: state <= state+1;// parity bit
-            4'h4: state <= 0;// stop bit(s) 
+            4'h4: 
+            begin
+                ready <= 1'b0;
+                state <= 0;// stop bit(s) 
+            end
             default:
             begin
                 if(ready)

@@ -53,7 +53,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Week 5/Basys3_Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Week 5/Basys3_Master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/School_Workspaces/Digital_Systems/Week 5/Basys3_Master.xdc"/>
         <Attr Name="ImportTime" Val="1729093394"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
